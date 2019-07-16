@@ -1,16 +1,12 @@
 import isYes from '../src/is-yes.js';
 
-const quizButton = document.getElementsById('quiz-button');
-const result = document.getElementsById('result');
+const quizButton = document.getElementById('quiz-button');
+const result = document.getElementById('result');
 
 quizButton.onclick = function() {
+    //console.log('working??');
+
     alert('Welcome to the quiz!');
-    
-    const confirmed = confirm('Quit now?');
-    
-    if(confirmed === false) {
-        return;
-    }
 
     let name = '';
 
@@ -20,6 +16,11 @@ quizButton.onclick = function() {
     const lastName = prompt('Last name:');
     name += lastName;
 
+    const confirmed = confirm('Are you sure you\'re ready?');
+    if(confirmed === false) {
+        return;
+    }
+
     let correctAnswers = 0;
 
     const isFamilyMan = prompt('Do I have kids?');
@@ -27,13 +28,15 @@ quizButton.onclick = function() {
     const correctIsFamilyMan = true;
     if(isYes(isFamilyMan) === correctIsFamilyMan) {
         correctAnswers += 1;
-    }
+        //console.log(correctAnswers);
+    } 
 
     const homework = prompt('Am I caught up on my homework?');
 
     const correctHomework = false;
     if(isYes(homework) === correctHomework) {
         correctAnswers += 1;
+        //console.log(correctAnswers);
     }
 
     const isSleeping = prompt('Is my favorite activity sleeping?');
@@ -41,11 +44,12 @@ quizButton.onclick = function() {
     const correctIsSleeping = true;
     if(isYes(isSleeping) === correctIsSleeping) {
         correctAnswers += 1;
+        //console.log(correctAnswers);
     }
 
     let response = 'Well, ' + name + ', ';
 
-    if(correctAnswers = 3) {
+    if(correctAnswers === 3) {
         response += 'you got three of three! You know me so well.';
     } else {
         response += 'you oughta read more closely! Try again!';
