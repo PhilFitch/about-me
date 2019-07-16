@@ -4,6 +4,7 @@
 
 h1 {
     text-align: center;
+    color: red;
 }
 
 img {
@@ -23,4 +24,15 @@ button {
     background-color: rgb(252, 252, 124);
     border: 2px solid rgb(97, 91, 91);
     border-radius: 8px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+span {
+    font-style: italic;
+    font-size: 1.5rem;
 }

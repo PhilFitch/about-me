@@ -14,7 +14,7 @@ quizButton.onclick = function() {
     name += firstName;
 
     const lastName = prompt('Last name:');
-    name += lastName;
+    name += ' ' + lastName;
 
     const confirmed = confirm('Are you sure you\'re ready?');
     if(confirmed === false) {
@@ -46,6 +46,8 @@ quizButton.onclick = function() {
         correctAnswers += 1;
         //console.log(correctAnswers);
     }
+
+    alert('Check your results below!');
 
     let response = 'Well, ' + name + ', ';
 
