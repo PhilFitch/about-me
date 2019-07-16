@@ -17,3 +17,10 @@ img {
 p, ul, ol {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+button {
+    font-size: 20px;
+    background-color: rgb(252, 252, 124);
+    border: 2px solid rgb(97, 91, 91);
+    border-radius: 8px;
+}
