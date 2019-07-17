@@ -1,4 +1,4 @@
-//import num-guess from '../src/number-guess.js';
+import numGuess from '../src/num-guess.js';
 
 // What do I need from the DOM (elements)
 const guessesRemaining = document.getElementById('guesses-remaining');
@@ -13,17 +13,14 @@ let guesses = 4;
 // What events do I need to listen to?
 check.addEventListener('click', () => {
     
-
+    
+    result.textContent = numGuess(yourGuess);
 
     // decrement guesses
-    //guesses -= 1;
+    guesses -= 1;
 
     // display new guesses
-    //guessesRemaining.textContent = guesses;
+    guessesRemaining.textContent = guesses;
     //console.log(guesses);
 
 });
-
-/*check.addEventListener('click', () => {
-        
-});*/
