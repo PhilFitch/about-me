@@ -16,11 +16,11 @@ check.addEventListener('click', () => {
 
 
     // decrement guesses
-    guesses -= 1;
+    //guesses -= 1;
 
     // display new guesses
-    guessesRemaining.textContent = guesses;
-    console.log(guesses);
+    //guessesRemaining.textContent = guesses;
+    //console.log(guesses);
 
 });
 
