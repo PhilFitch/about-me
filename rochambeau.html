@@ -33,19 +33,20 @@
         <h2>Click an image to play:</h2>
 
         <section>
+            <!-- //changed radio buttons to regular buttons to combine functions -->
             <label>
                 <img class="radio-image" src="assets/rock.jpeg">
-                <input type="radio" name="throw" value="rock">
+                <button id="rock" type="radio" name="throw" value="rock">rock</button>
             </label>
 
             <label>
                 <img class="radio-image" src="assets/paper.png">
-                <input type="radio" name="throw" value="paper">
+                <button id="paper" type="radio" name="throw" value="paper">paper</button>
             </label>
 
             <label>
                 <img class="radio-image" src="assets/scissors.png">
-                <input type="radio" name="throw" value="scissors">
+                <button id="scissors" type="radio" name="throw" value="scissors">scissors</button>
             </label>
         </section>
 
@@ -54,8 +55,8 @@
 
         <h2>You <span id="win-lose"></span>!</h2>
 
-        <h2>Wins: <span id="wins"></span></h2>
-        <h2>Losses: <span id="losses"></span></h2>
+        <h2>Wins: <span id="wins">0</span></h2>
+        <h2>Losses: <span id="losses">0</span></h2>
     </main>
 
     <script src="../src/rochambeau.js" type="module"></script>
