@@ -2,14 +2,12 @@
 
 function numGuess(yourGuess) {
     const myNumber = 13;
-    let result = '';
     if(yourGuess < myNumber) {
-        result = 'Too Low!';
+        return -1;
     } else if(yourGuess > myNumber) {
-        result = 'Too High!';
+        return 1;
     } else if(yourGuess === myNumber) {
-        result = 'You Got It!';
+        return 0;
     }
-    return result;
 }
 export default numGuess;

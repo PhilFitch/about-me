@@ -10,8 +10,26 @@ const result = document.getElementById('result');
 
 let guesses = 4;
 
-// What events do I need to listen to?
+
 check.addEventListener('click', () => {
+    const guess = numGuess(parseInt(yourGuess.value));
+    if(guess === 0) {
+        result.textContent = 'You Got It!';
+        guessesRemaining.textContent = '';
+        check.disabled = true;
+    } else if(guess === 1) {
+        result.textContent = 'Too High!';
+        guesses --;
+        guessesRemaining.textContent = guesses;
+    } else if(guess === -1) {
+        result.textContent = 'Too Low!';
+        guesses --;
+        guessesRemaining.textContent = guesses;
+    }
+});
+
+// What events do I need to listen to?
+/*check.addEventListener('click', () => {
     
     
     result.textContent = numGuess(yourGuess);
@@ -23,4 +41,4 @@ check.addEventListener('click', () => {
     guessesRemaining.textContent = guesses;
     //console.log(guesses);
 
-});
+});*/
