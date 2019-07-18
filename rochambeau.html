@@ -10,14 +10,55 @@
 </head>
 
 <body>
-    <nav>
-        <a href="./">Home</a>
-        <a href="guess.html">Play the Numbers!</a>
-        <a href="rochambeau.html">Rochambeau</a>
-    </nav>
+
+    <header>
+        <nav>
+            <a href="./">Home</a>
+            <a href="guess.html">Play the Numbers!</a>
+            <a href="rochambeau.html">Rochambeau</a>
+        </nav>
+
+        <h1>ROCHAMBEAU</h1>
+    </header>
+
+    <main>
+        <h2>The Classic Game of Rock, Paper, Scissors</h2>
+
+        <ul>
+            <li>Rock beats Scissors</li>
+            <li>Scissors beats Paper</li>
+            <li>Paper beats Rock</li>
+        </ul>
+
+        <h2>Click an image to play:</h2>
+
+        <p>
+            <label>
+                <img class="radio-image" src="assets/rock.jpeg">
+                <input type="radio" name="throw" value="rock">
+            </label>
+
+            <label>
+                <img class="radio-image" src="assets/paper.png">
+                <input type="radio" name="throw" value="paper">
+            </label>
+
+            <label>
+                <img class="radio-image" src="assets/scissors.png">
+                <input type="radio" name="throw" value="scissors">
+            </label>
+        </p>
+
+        <h2>Computer Plays:</h2>
+        <span id="computer-play"></span>
+
+        <h2>You <span id="win-lose"></span>!</h2>
+
+        <h2>Wins: <span id="wins"></span></h2>
+        <h2>Losses: <span id="losses"></span></h2>
+    </main>
 
     <script src="../src/rochambeau.js" type="module"></script>
-
 </body>
 
 </html>
