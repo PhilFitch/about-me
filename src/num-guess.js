@@ -1,5 +1,3 @@
-
-
 function numGuess(yourGuess) {
     const myNumber = 13;
     if(yourGuess < myNumber) {
