@@ -4,7 +4,7 @@ const quizButton = document.getElementById('quiz-button');
 const result = document.getElementById('result');
 
 quizButton.onclick = function() {
-    //console.log('working??');
+    
 
     alert('Welcome to the quiz!');
 
@@ -28,7 +28,6 @@ quizButton.onclick = function() {
     const correctIsFamilyMan = true;
     if(isYes(isFamilyMan) === correctIsFamilyMan) {
         correctAnswers += 1;
-        //console.log(correctAnswers);
     } 
 
     const homework = prompt('Am I caught up on my homework?');
@@ -36,7 +35,6 @@ quizButton.onclick = function() {
     const correctHomework = false;
     if(isYes(homework) === correctHomework) {
         correctAnswers += 1;
-        //console.log(correctAnswers);
     }
 
     const isSleeping = prompt('Is my favorite activity sleeping?');
@@ -44,7 +42,6 @@ quizButton.onclick = function() {
     const correctIsSleeping = true;
     if(isYes(isSleeping) === correctIsSleeping) {
         correctAnswers += 1;
-        //console.log(correctAnswers);
     }
 
     alert('Check your results below!');
