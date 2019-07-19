@@ -39,13 +39,13 @@ scissorsButton.addEventListener('click', () => {
 
 function showCompPlay(comThrow) {
     if(comThrow === 0) {
-        comPlay.textContent = 'Rock';
+        comPlay.src = 'assets/rock.jpeg';
     }
     else if(comThrow === 1) {
-        comPlay.textContent = 'Paper';
+        comPlay.src = 'assets/paper.png';
     }
     else if(comThrow === 2) {
-        comPlay.textContent = 'Scissors';
+        comPlay.src = 'assets/scissors.png';
     }
 }
 

@@ -23,3 +23,15 @@ label {
 button {
     display: none;
 }
+
+#tally {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+}
+
+#image-container {
+    display: inline-block;
+    width: 265px;
+    height: 265px;
+}
