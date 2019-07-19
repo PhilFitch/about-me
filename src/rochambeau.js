@@ -7,9 +7,11 @@ const comPlay = document.getElementById ('computer-play');
 const winLose = document.getElementById ('win-lose');
 const wins = document.getElementById ('wins');
 const losses = document.getElementById ('losses');
+const draws = document.getElementById ('draws');
 
 let winCount = 0;
 let lossCount = 0;
+let drawCount = 0;
 
 rockButton.addEventListener('click', () => {
     const userPlay = 0;
@@ -25,17 +27,17 @@ rockButton.addEventListener('click', () => {
 
     if(userPlay === comThrow) {
         winLose.textContent = 'Tie';
+        drawCount++;
+        draws.textContent = drawCount;
     } else if(userPlay === comThrow + 1 || userPlay === comThrow - 2) {
         winLose.textContent = 'Win';
-        winCount ++;
+        winCount++;
         wins.textContent = winCount;
     } else {
         winLose.textContent = 'Lose';
-        lossCount ++;
+        lossCount++;
         losses.textContent = lossCount;
     }
-
-
 });
 
 paperButton.addEventListener('click', () => {
