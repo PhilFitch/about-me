@@ -6,9 +6,10 @@ const yourGuess = document.getElementById('your-guess');
 const result = document.getElementById('result');
 
 let guesses = 4;
+const myNumber = Math.floor(Math.random() * 20) + 1;
 
 check.addEventListener('click', () => {
-    const guess = numGuess(parseInt(yourGuess.value));
+    const guess = numGuess(parseInt(yourGuess.value), myNumber);
     if(guess === 0) {
         result.classList.remove('lose');
         result.classList.add('win');
