@@ -51,17 +51,17 @@ function showCompPlay(comThrow) {
 
 function whoWins(userPlay, comThrow) {
     if(userPlay === comThrow) {
-        winLose.textContent = 'Tie';
+        winLose.textContent = 'You Tie!';
         drawCount++;
         draws.textContent = drawCount;
     }
     else if(userPlay === comThrow + 1 || userPlay === comThrow - 2) {
-        winLose.textContent = 'Win';
+        winLose.textContent = 'You Win!';
         winCount++;
         wins.textContent = winCount;
     }
     else {
-        winLose.textContent = 'Lose';
+        winLose.textContent = 'You Lose!';
         lossCount++;
         losses.textContent = lossCount;
     }

@@ -1,5 +1,5 @@
 function numGuess(yourGuess) {
-    const myNumber = 13;
+    const myNumber = Math.floor(Math.random() * 20) + 1;
     if(yourGuess < myNumber) {
         return -1;
     } else if(yourGuess > myNumber) {
