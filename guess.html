@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess My Number</title>
+    <link rel="stylesheet" type="text/css" href="src/main.css">
+    <link rel="stylesheet" type="text/css" href="src/guess.css">
+</head>
+<body>
+    
+    <nav>
+        <a href="./">Home</a>
+        <a href="guess.html">Play the Numbers!</a>
+        <a href="rochambeau.html">Rochambeau</a>
+    </nav>
+
+    <section>
+        <h1>Guess My Number!</h1>
+        
+        <p>I'm thinking of a number from 1 to 20.
+            Make a guess and I'll tell you if you're too high or low.
+            You have four tries. Good luck!
+        </p>
+
+        <h2>Guesses Remaining: <span id="guesses-remaining">4</span></h2>
+
+        <h2>Your Guess: <input id=your-guess type=number></h2>
+
+        <button id="check">Check</button>
+
+        <h2>Result: <span id="result"></span></h2>
+    </section>
+
+    <script src="../src/guess.js" type="module"></script>
+</body>
+</html>

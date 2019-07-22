@@ -1,0 +1,19 @@
+
+
+button {
+    font-size: 20px;
+    background-color: rgb(252, 252, 124);
+    border: 2px solid rgb(97, 91, 91);
+    border-radius: 8px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+span {
+    font-style: italic;
+    font-size: 1.5rem;
+}
