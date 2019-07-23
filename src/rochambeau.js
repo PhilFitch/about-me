@@ -8,12 +8,19 @@ const winLose = document.getElementById('win-lose');
 const wins = document.getElementById('wins');
 const losses = document.getElementById('losses');
 const draws = document.getElementById('draws');
+const rockImage = document.getElementById('rock-image');
+const paperImage = document.getElementById('paper-image');
+const scissorsImage = document.getElementById('scissors-image');
+
 
 let winCount = 0;
 let lossCount = 0;
 let drawCount = 0;
 
 rockButton.addEventListener('click', () => {
+    rockImage.classList.add('selected');
+    paperImage.classList.remove('selected');
+    scissorsImage.classList.remove('selected');
     const userPlay = 0;
     const comThrow = getPlay();
 
@@ -22,6 +29,9 @@ rockButton.addEventListener('click', () => {
 });
 
 paperButton.addEventListener('click', () => {
+    rockImage.classList.remove('selected');
+    paperImage.classList.add('selected');
+    scissorsImage.classList.remove('selected');
     const userPlay = 1;
     const comThrow = getPlay();
 
@@ -30,6 +40,9 @@ paperButton.addEventListener('click', () => {
 });
 
 scissorsButton.addEventListener('click', () => {
+    rockImage.classList.remove('selected');
+    paperImage.classList.remove('selected');
+    scissorsImage.classList.add('selected');
     const userPlay = 2;
     const comThrow = getPlay();
 

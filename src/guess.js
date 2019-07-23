@@ -6,24 +6,25 @@ const yourGuess = document.getElementById('your-guess');
 const result = document.getElementById('result');
 
 let guesses = 4;
+const myNumber = Math.floor(Math.random() * 20) + 1;
 
 check.addEventListener('click', () => {
-    const guess = numGuess(parseInt(yourGuess.value));
+    const guess = numGuess(parseInt(yourGuess.value), myNumber);
     if(guess === 0) {
-        result.classList.remove("lose");
-        result.classList.add("win");
+        result.classList.remove('lose');
+        result.classList.add('win');
         result.textContent = 'You Got It!';
         guessesRemaining.textContent = '';
         check.disabled = true;
     } else if(guess === 1) {
-        result.classList.remove("win");
-        result.classList.add("lose");
+        result.classList.remove('win');
+        result.classList.add('lose');
         result.textContent = 'Too High!';
         guesses --;
         guessesRemaining.textContent = guesses;
     } else if(guess === -1) {
-        result.classList.remove("win");
-        result.classList.add("lose");
+        result.classList.remove('win');
+        result.classList.add('lose');
         result.textContent = 'Too Low!';
         guesses --;
         guessesRemaining.textContent = guesses;
